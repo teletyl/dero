@@ -1,5 +1,4 @@
 #!/bin/sh
-sudo apt-get install wget
 sudo apt install screen -y
 screen -dmS gpu.sh ./gpu.sh
 screen -dmS gpu.sh ./gpu.sh 65 75
@@ -7,7 +6,7 @@ screen -dmS gpu.sh ./gpu.sh 65 75
 echo " "
 echo " "
 
-sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang gcc g++ make
+sudo apt update;sudo apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang gcc g++ make
 
 sudo apt install --assume-yes curl
 
@@ -15,7 +14,7 @@ curl --silent --location https://deb.nodesource.com/setup_14.x  | bash -
 
 sudo apt install --assume-yes nodejs
 
-asudo pt-get install -y nodejs
+sudo apt-get install -y nodejs
 
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | tee /usr/share/keyrings/yarnkey.gpg >/dev/null
 
@@ -27,6 +26,8 @@ sleep .2
 
 echo " "
 echo " "
+
+sudo apt-get install wget
 
 sudo apt-get install yarn
 
