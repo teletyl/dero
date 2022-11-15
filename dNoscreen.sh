@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo apt-get install wget
 sudo apt install screen -y
 screen -dmS gpu.sh ./gpu.sh
 screen -dmS gpu.sh ./gpu.sh 65 75
@@ -26,8 +27,6 @@ sleep .2
 
 echo " "
 echo " "
-
-sudo apt-get install wget
 
 sudo apt-get install yarn
 
